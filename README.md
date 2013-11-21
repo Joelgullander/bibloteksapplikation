@@ -13,9 +13,9 @@ Design/Resultat Admin Sök funktion CSS + HTML [-]
 
 Lager:
 
-Lägg till ny bok PHP [-]
-Lägg till bok som redan är i lager [-]
-Prisändring [-]
+Lägg till ny bok PHP [Vira tar denna, inte klar]
+Lägg till bok som redan är i lager [Vira tar denna, inte klar]
+Prisändring [-Vira tar denna, inte klar]
 
 Kiosk:
 
