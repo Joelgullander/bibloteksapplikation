@@ -86,8 +86,6 @@ header input {
 }
 
 
-
-
 footer {
 	background-color:white;
 	border-top: 1px solid black;
@@ -96,13 +94,6 @@ footer {
 	padding-top: 12px;
 	margin:0 auto;
 }
-
-
-
-
-
-
-
 
 
 h1 {
@@ -274,6 +265,7 @@ select {
 
 
 
+
 .rapportbox{
 		margin: 40px auto;
 	margin-top: 20px;
@@ -327,16 +319,6 @@ select {
 	font-size: 22px;
 	color: #000;
 }
-
-.rfooter {
-
-	width: 100%;
-	height: 50px;
-	background: #CCC;
-	box-shadow: #777 0px -5px 10px -2px;
-}
-
-
 
 
 /**********MEDIA QUERIES*********/
