@@ -31,5 +31,5 @@ Koda template JQUERY HTML CSS [Joel tar denna, inte klar]
 
 Administrativ:
 Hela databasen [-]
-Sökfunktion [valentin tar denna, inte klar iochmed att rapporten är klar ska det inte vara större problem att lägga till en till sökfuntkion till samtliga html sidor]
+Sökfunktion [valentin tar denna, NÄSTAN klar]
 Design administrativa [Adam tar denna, inte klar]
