@@ -1,0 +1,348 @@
+html {
+    height: 100%;
+}
+body{
+	background:-webkit-linear-gradient(#979797 0%, #e2e2e2 100%);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	height:100%;
+}
+#wrapper {
+
+	bottom:20px;
+	margin:0 auto;
+	width: 1020px;
+}
+
+header {
+	background-image:url('../imgs/admin/header_admin.png');
+	width:100%;
+	height:246px;
+	position:relative;
+	box-shadow: 0px 10px 20px #888888;
+	border-radius: 20px;
+}
+
+ul{
+	position: absolute;
+	font-size: 22px;
+	bottom: 0;
+	clear: both;
+	padding-left: 50px;
+}
+ul li {
+	float: left;
+	margin:0 40px 5px 10px;
+	color: #fff;
+}
+
+ul li:hover{
+	color: #000;
+	cursor: pointer;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+	font-family: verdana;
+}
+
+a:hover{
+	color: #000;
+	cursor: pointer;
+}
+
+.searchbox {
+	width: 400px;
+	height: 40px;
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	border-radius: 10px;
+}
+header input {
+	width: 390px;
+	height: 35px;
+	border-radius: 10px;
+	font-size: 20px;
+}
+
+.searchbox h2 {
+	position: absolute;
+	bottom: 0px;
+	right: 435px;
+	width: 80px;
+	font-size: 22px;
+	color: #FFF;
+}
+
+footer {
+	background-color:white;
+	border-top: 1px solid black;
+	min-height: 45px;
+	width:100%;
+	padding-top: 12px;
+	margin:0 auto;
+}
+
+
+
+
+
+
+
+
+
+h1 {
+	position: absolute;
+	font-size: 20px;
+	margin:20px 0 0 20px;
+	color: white;
+	font-family: verdana;
+	border: 2px solid white;
+	padding: 10px;
+}
+
+
+
+
+
+.cbox {
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 900px;
+	height: 250px;
+	border: 1px solid #ccc;
+	position: relative;
+}
+.imgbok {
+	width: 100px;
+	height: 150px;
+	background: #123;
+	position: absolute;
+	margin: 20px 0 0 20px;
+}
+.infotext {
+	position: absolute;
+	width: 500px;
+	height: 200px;
+	/*border: 1px solid #000;*/
+	margin: 25px 0 0 150px;
+}
+.infotext h2 {
+	font-size:22px;
+}
+.infotext p {
+	font-size:16px;
+	margin: 5px 0 0 10px;
+}
+.infotext p:nth-last-child(2), p:nth-last-child(3), p:nth-last-child(1) {
+	margin: 5px 0 0 0;
+}
+.alternativbox {
+	width: 200px;
+	height: 200px;
+	/*border: 1px solid #000;*/
+	margin: 25px 0 0 650px;
+}
+.alt1 {
+	width: 180px;
+	height: 40px;
+	border-radius: 5px;
+	background: #CCC;
+	margin:5px 0 0 20px;
+}
+.alt1 p {
+	font-size: 16px;
+	margin-left:20px;
+	margin-top:20px;
+}
+.alt2 {
+	width: 180px;
+	height: 40px;
+		border-radius: 5px;
+	background: #CCC;
+	margin:5px 0 0 20px;
+}
+.alt2 p {
+	font-size: 16px;
+	margin-left:20px;
+	margin-top:10px;
+}
+.alt3 {
+	width: 180px;
+	height: 40px;
+		border-radius: 5px;
+	background: #CCC;
+	margin:5px 0 0 20px;
+}
+.alt3 p {
+	font-size: 16px;
+	margin-left:20px;
+	margin-top:10px;
+}
+.alt4 {
+	width: 180px;
+	height: 40px;
+		border-radius: 5px;
+	background: #CCC;
+	margin:5px 0 0 20px;
+}
+.alt4 p {
+	font-size: 16px;
+	margin-left:20px;
+	margin-top:10px;
+}
+
+
+
+
+
+
+
+.cbox input {
+	position: absolute;
+	width: 80px;
+	height: 30px;
+
+}
+.fpris {
+	position: absolute;
+	margin:25px 0 0 200px;
+	font-size: 30px;
+	width: 300px;
+}
+.prisss {
+	position: absolute;
+	margin:25px 0 0 370px;
+	font-size: 30px;
+	width: 300px;	
+}
+.antalsalda {
+	position: absolute;
+	margin: 25px 0 0 150px;
+}
+.datumsalda {
+		position: absolute;
+	margin: 70px 0 0 150px;
+}
+
+
+.fprisandra {
+	position: absolute;
+	margin: -18px 0 0 60px;
+}
+.fprisandra input{
+	height: 13px;
+}
+select {
+	position: absolute;
+	margin: -22px 0 0 150px;
+}
+
+.saldantal {
+	position: absolute;
+	margin: -18px 0 0 50px;
+}
+.datumsald{
+	position: absolute;
+	margin: -18px 0 0 65px;
+}
+.datumsald input{
+	height: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.rapportbox{
+		margin: 40px auto;
+	margin-top: 20px;
+	width: 900px;
+	height: 400px;
+	border: 1px solid #ccc;
+	position: relative;
+}
+.rapportsok {
+	position: absolute;
+	width: 600px;
+	height: 250px;
+	background: #fff;
+}
+
+.rapportsok p {
+	margin-left: 20px;
+}
+.rapportsok h2 {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 180px;
+	font-size: 22px;
+	color: #000;
+}
+.rapportsok form {
+	position: absolute;
+	margin: 10px 0 0 95px;
+}
+.rapportsok input {
+	height: 20px;
+	width: 180px;
+}
+.rapportsok select {
+	margin-left: 290px;
+}
+
+.rapporttoplista {
+	position: absolute;
+	width: 300px;
+	height: 400px;
+	border-left: 1px solid #CCC;
+		margin-left: 600px; 
+}
+.rapporttoplista h2 {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 180px;
+	font-size: 22px;
+	color: #000;
+}
+
+.rfooter {
+
+	width: 100%;
+	height: 50px;
+	background: #CCC;
+	box-shadow: #777 0px -5px 10px -2px;
+}
+
+
+
+
+/**********MEDIA QUERIES*********/
+
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+
+}
+
+/* for 700px or less*/
+@media screen and (max-width: 700px) {
+
+}
+
+/* for 480px or less*/
+@media screen and (max-width: 480px) {	
+
+}
+
+
