@@ -19,6 +19,7 @@ function start (){
 				// man kan lägga till flera för specifika sidor och vad för resultat det ska få ut ***
 				action: "autoComplete",
 				fragment: $(this).val()
+
 			},
 			success:function(data){
 				// we have recived the answer to our question as an array (JSON)
@@ -28,9 +29,22 @@ function start (){
 			error:function(errordata){
 				console.log(errordata.responseJSON);
 			}
+
+			
 		});
 
+		// *** Valentin/ La till denna koden som säger om sökrutan är empty så ska inga resultat visas 
+		if($(this).val() == '')
+			      {
+			        $('.result').hide();
+			      }
+			      else {
+			      $('.result').show();	
+			      }
+
 	});
+
+
 
 		
 };
