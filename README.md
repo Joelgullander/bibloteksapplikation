@@ -13,7 +13,7 @@ Administrativa sidan ska ha en EGEN css fil och js fil, samt egen bild map, lika
  X = Klar, - = Ledig
 Rapport:
 
-Sökfunktion Titel (RAPPORT) DB-PHP-JSON [Valentin tar denna, inte klar]
+Sökfunktion Titel (RAPPORT) DB-PHP-JSON [Valentin tar denna, inte klar nästan klar]
 Design/Resultat Admin Sök funktion CSS + HTML [-]
 
 
@@ -31,5 +31,5 @@ Koda template JQUERY HTML CSS [Joel tar denna, inte klar]
 
 Administrativ:
 Hela databasen [-]
-Sökfunktion [-]
+Sökfunktion [valentin tar denna, inte klar iochmed att rapporten är klar ska det inte vara större problem att lägga till en till sökfuntkion till samtliga html sidor]
 Design administrativa [Adam tar denna, inte klar]
