@@ -32,4 +32,4 @@ Koda template JQUERY HTML CSS [Joel tar denna, inte klar]
 Administrativ:
 Hela databasen [-]
 Sökfunktion [-]
-Design administrativa [-]
+Design administrativa [Adam tar denna, inte klar]
