@@ -14,9 +14,10 @@ function start (){
 			url:"sql",
 			cache:false,
 			data: {
-				// *** Valentin ändrade detta. action till autoCompleteTitle. Gjorde en ändring i dbquestion.json
-				// för att bara fokusera på titlar i rapport eftersom de var det Karl Kristian ville ha på sin rapport sida ***
-				action: "autoCompleteTitle",
+				// *** Valentin ändrade detta. 
+				// nu har vi en sökfunktion för hela projektet
+				// man kan lägga till flera för specifika sidor och vad för resultat det ska få ut ***
+				action: "autoComplete",
 				fragment: $(this).val()
 			},
 			success:function(data){
@@ -33,7 +34,7 @@ function start (){
 
 		
 };
-// *** valentin/ vi kan ändra detta utseende när admin rapport sidans html css är klar
+// *** valentin/ vi kan ändra detta utseende när admin sidans html css är klar
 // just nu är det som den vi gjorde på lektionen med Thomas ***
 // Render a result (booklist) as HTML
 function renderResult (data) {
@@ -49,7 +50,7 @@ function renderResult (data) {
 		html += "<tr>" 
 				+ "<td>" + data[i].title + "</td>"
 				+ "<td>" + data[i].author + "</td>"
-				+ "<td>" + data[i].ISBN + "</td>"
+				+ "<td>" + data[i].isbn + "</td>"
 				+ "</tr>";								
 	}
 	html += "</table>";
