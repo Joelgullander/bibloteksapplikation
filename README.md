@@ -31,5 +31,5 @@ Koda template JQUERY HTML CSS [Joel tar denna, inte klar]
 
 Administrativ:
 Hela databasen [-]
-Sökfunktion [valentin tar denna, NÄSTAN klar]
+Sökfunktion [valentin tar denna, (tror denna är) klar 15:01 22-11-2013]
 Design administrativa [Adam tar denna, inte klar]
