@@ -6,7 +6,7 @@ Ett system för kund &amp; anställd. Österslätts Papper &amp; Böcker.
 VIKTIGT.... LÄS
 _________________
 Bokat möte och utvecklingstid på måndag 12:00 - cirka 14:00. Fyll i era namn här så att jag vet att ni kan, eller svara i facebook gruppen. /Joel
-(Joel [X] Valentin [X] Kristoffer[ ] Vira [ ] Adam [X])
+(Joel [X] Valentin [X] Kristoffer[ ] Vira [X] Adam [X])
 OBS. Databas måste vara klar för detta möte, måste veta om det är möjligt, annars byter vi dag!
 
 Administrativa sidan ska ha en EGEN css fil och js fil, samt egen bild map, likaså kiosken. Och när era tasks är klara skriv även tidpunkt och dag i readme filen för att jag ska kunna göra burn down charten. 
