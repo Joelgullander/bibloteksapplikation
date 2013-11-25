@@ -10,6 +10,8 @@
 		<link rel="stylesheet" type="text/css" href="css/css_admin.css">
 		<script src="script/jquery.js"></script>
 		<script src="script/js_admin.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> 
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
 	</head>
 
 	<body>
@@ -28,36 +30,35 @@
 						</form>
 					</div>
 				</header>
-		<div class="maincontent">
-			<div class="cbox">
-				<div class="imgbok"></div>
-				<div class="infotext">
-					<h2>Leverans</h2>
-				</br>
-					<p>ISBN:<form class="fprisandra"><input type="text" name="search"></form>
-					<p>Titel:<form class="fprisandra"><input type="text" name="search"></form>
-					<p>Datum:<form class="fprisandra"><input type="text" name="search"></form>
-					<p>F-pris:<form class="fprisandra"><input type="text" name="search"></form>
-					</p>
-						<select>
-  							<option value="1,8">x 1,8</option>
-  							<option value="1,9">x 1,9</option>
-						</select> 
-					<p>Antal:<form class="fprisandra"><input type="text" name="search"></form>
-					<p>Hylla:<form class="fprisandra"><input type="text" name="search"></form>
-					</br>
-					<button>Lägg till </button>
+					<div class="maincontent">
+						<div class="leveransbox">
+							<h1>Leverans (ny bok)</h1>	
+				
+								<div class="info"><form><p>ISBN:<input type="text" name="isbn"></form></div>
+								<div class="info"><form><p>Titel:<input type="text" name="titel"></form></div>
+								<div class="info"><form><p>Datum:<input type="text" name="date" id="date"></form></div>
+								<div class="info"><form><p>Antal:<input type="text" name="search"></form></div>
+								<div class="info"><form><p>F-pris:<input type="text" name="fpris"></form></div>
+								<div class="info"><form><p>Butikspris:<input type="text" name="search"></form></div>
+								<div class="info"><form><p>Hylla:<input type="text" name="search"></form></div>
+								
+								<button>Lägg till bok</button>
 					
-				</div>
-				<div class="alternativbox">
-					<div class="alt1"> <p><a href="sok.html">Detaljerad info</a></p> </div>
-					<div class="alt2"><p><a href="leverans.html">Leverans</a></p></div>
-					<div class="alt3"><p><a href="sald.html">Såld +</a></p></div>
-					<div class="alt4"><p><a href="pris.html">Ändra pris</a></p></div>
-				</div>
-			</div>
-		</div>
-		<footer></footer>
-		</div>
+						</div>
+							<div class="alternativbox">
+								<h1>Uppdatera lager</h1>
+								<div class="info"><form><p>ISBN:<input type="text" name="isbn"></form></div>
+								<div class="info"><form><p>Antal:<input type="text" name="search"></form></div>
+								<div class="info"><form><p>Hylla:<input type="text" name="search"></form></div>
+								<div class="info"><form><p>Butikspris:<input type="text" name="search"></form></div>		
+
+								<button>Ändra</button>			
+
+						</div>
+								
+					</div>
+					<footer></footer>
+			</div>						
+				
 	</body>
 </html>
