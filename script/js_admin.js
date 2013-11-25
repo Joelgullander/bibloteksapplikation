@@ -76,3 +76,7 @@ function renderResult (data) {
 
 // wait for the dom to load then run start
 $(start);
+
+$(function() {
+    $( "#date" ).datepicker();
+  });
