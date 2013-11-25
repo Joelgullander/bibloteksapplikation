@@ -7,9 +7,9 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 	height:100%;
+	font-family: verdana;
 }
 #wrapper {
-
 	bottom:20px;
 	margin:0 auto;
 	width: 1020px;
@@ -28,7 +28,6 @@ ul{
 	position: absolute;
 	font-size: 22px;
 	bottom: 0;
-	clear: both;
 	padding-left: 50px;
 }
 ul li {
@@ -45,7 +44,6 @@ ul li:hover{
 a{
 	text-decoration: none;
 	color: #fff;
-	font-family: verdana;
 }
 
 a:hover{
@@ -77,12 +75,11 @@ header input {
 	color: #FFF;
 }
 
-
 .maincontent {
 	width:100%;
 	min-height:300px;
 	background-color:white;
-	margin-top: -15px;
+	margin-top: -50px;
 }
 
 
@@ -97,14 +94,47 @@ footer {
 
 
 h1 {
-	position: absolute;
-	font-size: 20px;
-	margin:20px 0 0 20px;
-	color: white;
-	font-family: verdana;
-	border: 2px solid white;
-	padding: 10px;
+	font-size: 30px;
+	color: #af0953;
+	padding-top: 70px;
+	font-weight: bold;
+	margin-bottom: 10px;
 }
+
+.kassabox{
+	width: 60%;
+	float: left;
+	min-height: 300px;
+	padding-left: 20px;
+}
+
+.kassabox input {
+	width: 200px;
+	height: 20px;
+	border-radius: 10px;
+	font-size: 18px;
+	margin-left: 10px;
+}
+
+.kassasok p {
+	font-size: 18px;
+	display: inline;
+}
+
+button {
+	font-size: 18px;
+}
+
+.topplista {
+	width: 35%;
+	float: right;
+	min-height: 300px;
+	border-left: 1px solid #000;
+	padding-left: 20px;
+}
+
+
+
 
 
 

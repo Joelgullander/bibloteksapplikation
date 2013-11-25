@@ -10,6 +10,8 @@
 		<link rel="stylesheet" type="text/css" href="css/css_admin.css">
 		<script src="script/jquery.js"></script>
 		<script src="script/js_admin.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> 
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
 	</head>
 
 	
@@ -32,22 +34,27 @@
 					</form>
 				</div>
 			</header>
-				<div class="maincontent">
-					<div class="rapportbox">
-							<div class="rapportsok">
-					<h2>Vilken bok har du sålt?</h2><form><input type="text" name="search"></form></div>
-							<p>Titel: Analfabeten som kunde räkna</p>
-							<select>
-		  							<option value="vecka">Vecka</option>
-		  							<option value="manad">Månad</option>
-		  							<option value="ar">År</option>
-								</select> 
-								<img src="imgs/diagram.jpg">
-							</div>
 
+				<div class="maincontent">
+					<div class="kassabox">
+						<h1>Kassa</h1>
+							<div class="kassasok">
+					<form><p>ISBN-nummer:</p><input type="text" name="search"><button>Ta fram bok</button></form>
+					<form><p>Antal:</p> <input type="text" name="sold"></form>
+					<form><p>Datum:</p> <input type="text" name="date" id="date"></form>
+					<button>Kontrollera/registrera</button>
+							</div>
+							
+					
 					</div>
+					
+					<div class="topplista"><h1>Topplista:</h1></div>		
+
 				</div>
-			<footer></footer>
+
+				<footer></footer>
 		</div>
+		
+		
 	</body>
 </html>
