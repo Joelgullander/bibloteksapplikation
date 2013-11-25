@@ -10,13 +10,12 @@
 		<link rel="stylesheet" type="text/css" href="css/css_admin.css">
 		<script src="script/jquery.js"></script>
 		<script src="script/js_admin.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> 
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
 	</head>
 
 	
-			
-		</div>
-	</body>
-		<body>
+	<body>
 		<div id="wrapper">
 			<header>
 				<ul>
@@ -32,28 +31,29 @@
 					</form>
 				</div>
 			</header>
-				<div class="rapportbox">
-				
-					<div class="rapportsok">
-						<h2>Sök bok:</h2><form><input type="text" name="search"></form>
+				<div class="maincontent">
 
+						<div class="rapportbox">
+							<h1>Rapporter</h1>
 						
-					</br></br></br></br>
-						<p>Titel: Analfabeten som kunde räkna</p>
-						<select>
-	  							<option value="vecka">Vecka</option>
-	  							<option value="manad">Månad</option>
-	  							<option value="ar">År</option>
-							</select> 
-							<img src="imgs/diagram.jpg">
-					</div>
-					<div class ="rapporttoplista">
-						<h2>Mest sålda böcker</h2>
-				</div>
-
-
-				</div>
-			<footer></footer>
+							<div class="rapportsok">
+						<form><p>Vilken bok?</p><input type="text" name="search"><button>Ta fram bok</button></form>
+						<form><p>Startdatum:</p> <input type="text" name="date" id="date"></form>
+						<form><p>Tidsintervall:<select>
+											<option>Vecka</option>
+											<option>Månad</option>
+											<option>År</option>
+											</select></p> 
+						<button>Hämta rapport</button>
+								</div>
+						</div>
+						
+							
+						<div class ="topplista"><h1>Topplista:</h1></div>
+						
+					</div>	
+				<footer></footer>
+				</div>	
 		</div>
 	</body>
 </html>
