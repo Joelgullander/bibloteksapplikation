@@ -5,6 +5,8 @@ function start (){
 	//$('<div class="result"/>').appendTo(".maincontentadmin");
 		$('<div class="result"/>').appendTo(".searchbox, .searchboxadmin");
 
+		$('<div class="resultbok"/>').appendTo('.maincontentadmin, .maincontent');
+
 	// add a input field
 	$('<form><input type="text" id="search" value=""/></form>').prependTo(".searchboxadmin, .searchbox");
 
@@ -111,8 +113,20 @@ function clickEvents() {
 };
 
 
-function renderBookdetails (data) {
+function renderBookdetails (bookObj) {
+	//console.log("Titel: " + bookObj.title);
 	
+	// test
+	/*for(var i  in bookObj){
+		console.log(i,bookObj[i])
+	}*/
+
+	var bokResultat = "<div>";
+	bokResultat += "<h3>" + bookObj.title + "</h3>";
+	bokResultat += "</div>";
+
+	$('.resultbok').html(bokResultat);
+
 };
 
 
