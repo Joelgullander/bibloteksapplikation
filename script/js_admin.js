@@ -90,5 +90,5 @@ function clickEvents() {
 $(start);
 
 $(function() {
-//    $( "#date" ).datepicker();
+    $( "#date" ).datepicker();
   });
