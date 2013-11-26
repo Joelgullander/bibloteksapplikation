@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="css/css_admin.css">
 		<script src="script/jquery.js"></script>
 		<script src="script/js_admin.js"></script>
+		<script src="script/js-list.js"></script>
 		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> 
 		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
 	</head>
@@ -30,23 +31,30 @@
 						<input type="text" name="search">
 					</form>-->
 					</div>
-				</header>
+			</header>
+
 					<div class="maincontent">
 						<div class="leveransbox">
 							<h1>Leverans (ny bok)</h1>	
-				
-								<div class="info"><form><p>ISBN:<input type="text" name="isbn"></form></div>
-								<div class="info"><form><p>Titel:<input type="text" name="titel"></form></div>
-								<div class="info"><form><p>Datum:<input type="text" name="date" id="date"></form></div>
-								<div class="info"><form><p>Antal:<input type="text" name="search"></form></div>
-								<div class="info"><form><p>F-pris:<input type="text" name="fpris"></form></div>
-								<div class="info"><form><p>Butikspris:<input type="text" name="search"></form></div>
-								<div class="info"><form><p>Hylla:<input type="text" name="search"></form></div>
-								
-								<button>Lägg till bok</button>
-					
+
+							<form method ="post" action="script/laggNyBok.php">
+								<div class="info">ISBN:<input type="text" name="isbn"></div>
+								<div class="info">Titel:<input type="text" name="titel"></div>
+								<div class="info">Datum:<input type="text" name="date" id="date"></div>
+								<div class="info">Antal:<input type="text" name="antal"></div>
+								<div class="info">F-pris:<input type="text" name="fpris"></div>
+								<div class="info">Butikspris:<input type="text" name="sprice"></form></div>
+								<div class="info">Hylla:<input type="text" name="hylla"></div>
+								<!--<div class="info"><select name="kat" id="category" style='width:180px;'></select></div>-->
+
+
+								<select name="kat" id="category" style='width:180px;'></select>
+
+								<div class="info"><input type="submit" value="Lägg till bok"></div>
+							</form>
 						</div>
-							<div class="alternativbox">
+
+						<div class="alternativbox">
 								<h1>Uppdatera lager</h1>
 								<div class="info"><form><p>ISBN:<input type="text" name="isbn"></form></div>
 								<div class="info"><form><p>Antal:<input type="text" name="search"></form></div>

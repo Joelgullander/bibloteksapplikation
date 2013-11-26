@@ -1,11 +1,11 @@
 <?php
-$dns ="mysql:dbname=osterslatts;host=localhost";
+$dns ="mysql:dbname=jsonarticlar;host=localhost";
 $myPDO = new PDO($dns , "root", "");
 
 //$myPDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 
 $statement = $myPDO -> prepare("select 
-	c_id, c_name from category");
+	catid, catnamn from category");
 $statement -> execute();
 
 //print_r($statement ->errorInfo());
@@ -14,4 +14,5 @@ $statement -> execute();
 $array = $statement -> fetchAll(PDO::FETCH_ASSOC);
 $array = json_encode($array );
 echo $array;
+echo "string";
 ?>
