@@ -34,6 +34,6 @@ Specifik info om bok [Joel tar denna, inte klar]
 Koda template JQUERY HTML CSS [Joel tar denna, inte klar]
 
 Administrativ:
-Hela databasen [-]
+Hela databasen [Kristoffer tar denna, inte klar]
 Sökfunktion [-]
 Design administrativa [Adam tar denna, inte klar]
