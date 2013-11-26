@@ -47,11 +47,11 @@ CREATE TABLE IF NOT EXISTS `books` (
 -- Dumping data for table `books`
 --
 
-INSERT INTO `books` (`isbn`, `c_id`, `fprice`, `title`, `author_fname`, `author_lname`, `shelf`, `price`, `stock`) VALUES
-('9780099470434', 2, 30, 'The curious incident of the dog in the night-time', 'Mark', 'Haddon', '10a', 78, 40),
-('9789144068688', 3, 100, 'Forskningsmetodikens grunder : att planera, genomföra och rapportera en undersökning', 'Rauna, Bo', 'Patel, Davidsson', '3', 238, 10),
-('9789163876394', 4, 50, 'Bygg med Legoboken : roliga idéer att bygga vidare på', 'Daniel', 'Lipkowitz', 'b9', 156, 5),
-('9789174293180', 1, 20, 'Fasanjägarna', 'Jussi', 'Adler-Olsen', '20b', 51, 20);
+INSERT INTO `books` (`isbn`, `c_id`, `fprice`, `title`, `author`, `shelf`, `price`, `stock`) VALUES
+('9780099470434', 2, 30, 'The curious incident of the dog in the night-time', 'Mark Haddon', '10a', 78, 40),
+('9789144068688', 3, 100, 'Forskningsmetodikens grunder : att planera, genomföra och rapportera en undersökning', 'Rauna Patel, Bo Davidsson', '3', 238, 10),
+('9789163876394', 4, 50, 'Bygg med Legoboken : roliga idéer att bygga vidare på', 'Daniel Lipkowitz', 'b9', 156, 5),
+('9789174293180', 1, 20, 'Fasanjägarna', 'Jussi Adler-Olsen', '20b', 51, 20);
 
 -- --------------------------------------------------------
 
