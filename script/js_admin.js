@@ -6,7 +6,7 @@ function start (){
 		$('<div class="result"/>').appendTo(".searchbox, .searchboxadmin");
 
 	// add a input field
-	$('<form><input type="text" id="search"/></form>').prependTo(".searchboxadmin, .searchbox");
+	$('<form><input type="text" id="search" value=""/></form>').prependTo(".searchboxadmin, .searchbox");
 
 	// add event handler keyup to #search
 	$('#search').keyup(function (){
@@ -81,33 +81,40 @@ function renderResult (data) {
 function clickEvents() {
 	// The click function point it into the text on the result
 	console.log($('.result tr').length);
+
 	$(".result tr").click(function (){
 		var isbn = this.id;
         $.ajax({
 			url:"sql",
 			cache:false,
 			data: {
-				// *** Valentin ändrade detta. 
-				// nu har vi en sökfunktion för hela projektet
-				// man kan lägga till flera för specifika sidor och vad för resultat det ska få ut ***
 				action: "getBookByISBN",
 				isbn: this.id
-
 			},
 			success:function(data){
-				console.log("Book details",data);
+				console.log("Book details",data[0]);
 				// gör function som får ut info om boken på main content.
-				//renderBookdetails(data[0]);
+				renderBookdetails(data[0]);
 			},
 			error:function(errordata){
 				console.log(errordata.responseJSON);
-			}
+			}	
 
-			
 		});
-
+    		// efter man har sökt och klickat på resultate så ska sökrutan försvinna
+    		$(".result").hide();
+    		// efter man har sökt och klickat på resultate så ska sökrutan vara blank
+    		document.getElementById('search').value=''; 
+		//});
+       
 	});
 };
+
+
+function renderBookdetails (data) {
+	
+};
+
 
 // wait for the dom to load then run start
 $(start);
