@@ -2,7 +2,8 @@ function start (){
 	// *** Valentin/ Just nu appendas resultatet och sökboxen till body detta kan vi ändra när vi har en 
 	// html css till rapport sidan ***  
 	// add div to hold our result table
-	$('<div class="result"/>').appendTo(".maincontent, .maincontentadmin");
+	$('<div class="result"/>').appendTo(".maincontentadmin");
+		$('<div class="result"/>').prependTo(".topplista");
 
 	// add a input field
 	$('<form><input type="text" id="search"/></form>').prependTo(".searchboxadmin, .searchbox");

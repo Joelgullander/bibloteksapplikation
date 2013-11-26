@@ -65,6 +65,7 @@ a:hover{
 	right: 5px;
 	border-radius: 10px;
 }
+/*test*/
 .searchboxadmin {
 	width: 400px;
 	height: 45px;
@@ -89,6 +90,7 @@ header input {
 	font-size: 22px;
 	color: #FFF;
 }
+/*test*/
 .searchboxadmin h2 {
 	position: absolute;
 	bottom: 0px;
@@ -104,6 +106,7 @@ header input {
 	margin-top: -50px;
 	padding-top: 70px;
 }
+/*test*/
 .maincontentadmin {
 	width:100%;
 	min-height:300px;
@@ -111,19 +114,22 @@ header input {
 	margin-top: -50px;
 	padding-top: 70px;
 }
+/*test*/
 td, th {
 	border: 1px solid #000;
 	padding: 3px;
 }
-
+/*test*/
 th {
 	background: #ddd;
 	font-weight: bold;
 	width: 900px;
 }
+/*test*/
 table {
 	width: 900px;
 	margin: 0 auto;
+	background: #FFF;
 }
 
 
@@ -176,6 +182,13 @@ button {
 	min-height: 300px;
 	border-left: 1px solid #000;
 	padding-left: 20px;
+	position: relative;
+}
+/* test */
+.topplista table {
+	width:300px;
+	position: absolute;
+	left: 0;
 }
 
 .rapportbox{
