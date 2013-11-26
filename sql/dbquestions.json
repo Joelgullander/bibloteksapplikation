@@ -40,5 +40,9 @@
 		[["isbn"]],
 		";SELECT * FROM books WHERE isbn=",
 		[["isbn"]]
+	],
+	"aproxISBN": [
+		"SELECT * FROM books WHERE isbn LIKE",
+		[["%","fragment", "%"]]
 	]
 }
