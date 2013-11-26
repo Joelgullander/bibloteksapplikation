@@ -78,5 +78,5 @@ function renderResult (data) {
 $(start);
 
 $(function() {
-    $( "#date" ).datepicker();
+//    $( "#date" ).datepicker();
   });
