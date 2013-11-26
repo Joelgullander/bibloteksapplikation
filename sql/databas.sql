@@ -38,6 +38,7 @@ CREATE TABLE IF NOT EXISTS `books` (
   `shelf` varchar(100) NOT NULL,
   `price` int(11) NOT NULL,
   `stock` int(11) DEFAULT NULL,
+  `book_delivery` datetime NOT NULL,
   PRIMARY KEY (`isbn`),
   KEY `category` (`c_id`),
   KEY `c_id` (`c_id`)
