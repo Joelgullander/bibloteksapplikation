@@ -17,7 +17,7 @@ $forfattare = $_POST['forfattare'];
 $mydate =$_POST['mydate'];
 $antal =$_POST['antal'];
 $fprice =$_POST['fpris'];
-$sprice =$_POST['fpris'];
+$sprice =$_POST['spris'];
 $forfattare=$_POST['forfattare'];
 $hylla =$_POST['hylla'];
 $category=$_POST['kat'];
@@ -38,6 +38,8 @@ if ($category=="Barnbocker")
 $data = array($isbn, $titel, $forfattare, $mydate, $antal, $fprice, $sprice, $hylla, $category);
 
 $statement->execute($data);
-//Данные с формы считываются следующим образом:
-//$s=$_POST["<имя_на_форме>"]; 
+
+// Go back to leverans.html
+header('Location: ../leverans.html');
+
 ?>
