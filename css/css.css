@@ -32,10 +32,18 @@ header {
 	background-color:white;
 }
 .menu {
+	position:relative;
+	left:25%;
+}
+.menu li {
+display: inline-block;
+font-family: Myriad Pro;
+font-size:18px;
+padding-left: 70px;
 	
 }
-.menu ul {
-	
+.highlight, .highlight_stay{
+    color:#ab2862;
 }
 footer {
 	background-color:white;
