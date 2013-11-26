@@ -25,6 +25,8 @@ function start (){
 				// we have recived the answer to our question as an array (JSON)
 				// now render it to HTML
 				renderResult(data);
+				// test click
+				clickEvents();
 			},
 			error:function(errordata){
 				console.log(errordata.responseJSON);
@@ -43,11 +45,11 @@ function start (){
 			      } 
 
 	}); 
-
-
-
+	
 		
 };
+
+
 // *** valentin/ vi kan ändra detta utseende när admin sidans html css är klar
 // just nu är det som den vi gjorde på lektionen med Thomas ***
 // Render a result (booklist) as HTML
@@ -61,7 +63,7 @@ function renderResult (data) {
 	// loop through reuslt array
 	for(var i = 0; i < data.length; i++){
 		//console.log(data[i]);
-		html += "<tr>" 
+		html += '<tr id="' + data[i].isbn + '">' 
 				+ "<td>" + data[i].title + "</td>"
 				+ "<td>" + data[i].author + "</td>"
 				+ "<td>" + data[i].isbn + "</td>"
@@ -72,6 +74,16 @@ function renderResult (data) {
 	// console.log(html);
 	$('.result').html(html);
 
+};
+
+//function addEvent for the click to work 
+function clickEvents() {
+	// The click function point it into the text on the result
+	console.log($('.result tr').length);
+	$(".result tr").click(function (){
+		var isbn = this.id;
+        alert(isbn);
+	});
 };
 
 // wait for the dom to load then run start
