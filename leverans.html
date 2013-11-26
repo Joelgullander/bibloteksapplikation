@@ -63,23 +63,20 @@
 
 							</form>
 
-
-
-
-
-
 						</div>
 
 						<div class="alternativbox">
 								<h1>Uppdatera lager</h1>
-								<div class="info"><form><p>ISBN:<input type="text" name="isbn"></form></div>
-								<div class="info"><form><p>Antal:<input type="text" name="search"></form></div>
-								<div class="info"><form><p>Hylla:<input type="text" name="search"></form></div>
-								<div class="info"><form><p>Butikspris:<input type="text" name="search"></form></div>
+
+							<form method ="post" action="script/andrabok.php">	
+								<div class="info"><p>ISBN:<input type="text" name="isbn"></div>
+								<div class="info"><p>Antal:<input type="text" name="antal"></div>
+								<div class="info"><p>Hylla:<input type="text" name="hylla"></div>
+								<div class="info"><p>Butikspris:<input type="text" name="sprice"></div>
 								<div class="info">Datum:<input type="text" name="mydate" id="date"></div>
+								<div class="info"><input type="submit" value="Ändra bok"></div>
 
-								<button>Ändra</button>			
-
+							</form>
 						</div>
 								
 					</div>
