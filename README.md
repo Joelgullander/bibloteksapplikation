@@ -37,6 +37,6 @@ Administrativ:
 Hela databasen [-]
 Sökfunktion [valentin tar denna, (tror denna är)  [X] klar 15:01 22-11-2013]
 Hela databasen [Kristoffer tar denna, inte klar]
-Sökfunktion [-]
+Sökfunktion [valentin tar denna, inte klar]
 
 Design administrativa [Adam tar denna, inte klar]
