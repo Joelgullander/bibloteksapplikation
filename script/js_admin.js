@@ -2,8 +2,8 @@ function start (){
 	// *** Valentin/ Just nu appendas resultatet och sökboxen till body detta kan vi ändra när vi har en 
 	// html css till rapport sidan ***  
 	// add div to hold our result table
-	$('<div class="result"/>').appendTo(".maincontentadmin");
-		$('<div class="result"/>').prependTo(".topplista");
+	//$('<div class="result"/>').appendTo(".maincontentadmin");
+		$('<div class="result"/>').appendTo(".searchbox, .searchboxadmin");
 
 	// add a input field
 	$('<form><input type="text" id="search"/></form>').prependTo(".searchboxadmin, .searchbox");
@@ -83,9 +83,30 @@ function clickEvents() {
 	console.log($('.result tr').length);
 	$(".result tr").click(function (){
 		var isbn = this.id;
-        alert(isbn);
+        $.ajax({
+			url:"sql",
+			cache:false,
+			data: {
+				// *** Valentin ändrade detta. 
+				// nu har vi en sökfunktion för hela projektet
+				// man kan lägga till flera för specifika sidor och vad för resultat det ska få ut ***
+				action: "getBookByISBN",
+				isbn: this.id
+
+			},
+			success:function(data){
+				renderBookdetails(data[0]);
+			},
+			error:function(errordata){
+				console.log(errordata.responseJSON);
+			}
+
+			
+		});
+
 	});
 };
+
 
 // wait for the dom to load then run start
 $(start);
