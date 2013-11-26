@@ -34,6 +34,11 @@ Specifik info om bok [Joel tar denna, inte klar]
 Koda template JQUERY HTML CSS [Joel tar denna, inte klar]
 
 Administrativ:
+<<<<<<< HEAD
 Hela databasen [-]
 Sökfunktion [valentin tar denna, (tror denna är)  [X] klar 15:01 22-11-2013]
+=======
+Hela databasen [Kristoffer tar denna, inte klar]
+Sökfunktion [-]
+>>>>>>> 2ad2fa6d7e03cd3126c6477481d0b2923ca17296
 Design administrativa [Adam tar denna, inte klar]
