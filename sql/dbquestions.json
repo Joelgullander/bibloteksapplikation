@@ -5,22 +5,22 @@
 	"password":"",
 	
 	"getBooksByTitle" : [
-		"SELECT * FROM booktitles WHERE title =",
+		"SELECT * FROM books WHERE title =",
 		[["title"]]
 	],
 
 	"getBooksByAuthor" : [
-		"SELECT * FROM booktitles WHERE author =",
+		"SELECT * FROM books WHERE author =",
 		[["author"]]
 	],
 
 	"getBookByISBN" : [
-		"SELECT * FROM booktitles WHERE isbn =",
+		"SELECT * FROM books WHERE isbn =",
 		[["isbn"]]
 	],
 
 	"autoComplete" : [
-		"SELECT * FROM booktitles WHERE isbn LIKE",
+		"SELECT * FROM books WHERE isbn LIKE",
 		[["%","fragment","%"]],
 		"OR author LIKE",
 		[["%","fragment","%"]],
@@ -29,16 +29,16 @@
 	],
 
 	"autoCompleteTitle" : [
-		"SELECT * FROM booktitles WHERE title LIKE",
+		"SELECT * FROM books WHERE title LIKE",
 		[["%","fragment","%"]]
 	],
 
 	"updateBookTitle" : [
-		"UPDATE booktitles SET title =",
+		"UPDATE books SET title =",
 		[["title"]],
 		"WHERE isbn=",
 		[["isbn"]],
-		";SELECT * FROM booktitles WHERE isbn=",
+		";SELECT * FROM books WHERE isbn=",
 		[["isbn"]]
 	]
 }
