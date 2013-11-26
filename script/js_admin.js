@@ -95,7 +95,7 @@ function clickEvents() {
 
 			},
 			success:function(data){
-				renderBookdetails(data[0]);
+				console.log("Book details",data);
 			},
 			error:function(errordata){
 				console.log(errordata.responseJSON);
@@ -106,7 +106,6 @@ function clickEvents() {
 
 	});
 };
-
 
 // wait for the dom to load then run start
 $(start);
