@@ -5,7 +5,7 @@ function start (){
 	$('<div class="result"/>').appendTo(".maincontent");
 
 	// add a input field
-	$('<form><input type="text" id="search"/></form>').prependTo(".searchbox");
+	$('<form><input type="text" id="search"/></form>').prependTo(".searchboxadmin, .searchbox");
 
 	// add event handler keyup to #search
 	$('#search').keyup(function (){
