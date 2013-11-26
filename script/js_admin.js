@@ -34,15 +34,15 @@ function start (){
 		});
 
 		// *** Valentin/ La till denna koden som säger om sökrutan är empty så ska inga resultat visas 
-		if($(this).val() == '')
+		 if($(this).val() == '')
 			      {
 			        $('.result').hide();
 			      }
 			      else {
 			      $('.result').show();	
-			      }
+			      } 
 
-	});
+	}); 
 
 
 
