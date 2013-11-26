@@ -24,6 +24,11 @@ header {
 	border-radius: 20px;
 }
 
+.home {
+	height: 150px; 
+	width: 150px;
+}
+
 ul{
 	position: absolute;
 	font-size: 22px;
