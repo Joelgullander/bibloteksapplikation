@@ -36,7 +36,7 @@ Koda template JQUERY HTML CSS [Joel tar denna, inte klar]
 Administrativ:
 Hela databasen [-]
 Sökfunktion [valentin tar denna, (tror denna är)  [X] klar 15:01 22-11-2013]
-Hela databasen [Kristoffer tar denna, inte klar]
+Hela databasen [X] klar 10:22 2013-11-26]
 Sökfunktion [valentin tar denna, inte klar]
 
 Design administrativa [Adam tar denna, inte klar]
