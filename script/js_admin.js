@@ -96,6 +96,8 @@ function clickEvents() {
 			},
 			success:function(data){
 				console.log("Book details",data);
+				// gör function som får ut info om boken på main content.
+				//renderBookdetails(data[0]);
 			},
 			error:function(errordata){
 				console.log(errordata.responseJSON);
