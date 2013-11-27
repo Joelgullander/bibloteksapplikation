@@ -27,7 +27,7 @@ header {
 	left:7px;
 	padding:10px;
 	margin:0 auto;
-	min-height:100px;
+	min-height:400px;
 	z-index: 10;
 	background-color:white;
 }
@@ -45,12 +45,39 @@ padding-left: 70px;
 .highlight, .highlight_stay{
     color:#ab2862;
 }
+
+/* SEARCH */
+.searchbox{
+text-align:center;
+}
+#searchbar{
+	background-image:url("../imgs/kiosk/searchbar.png");
+	width:378px;
+	height:49px;
+	display:inline-block;
+	padding:10px;
+}
+#searchbar input[type="text"] {
+	width: 371px;
+	height:44px;
+	font-size:30px;
+}
+#searchbutton {
+	background-image:url("../imgs/kiosk/searchbutton.png");
+	width:121px;
+	height:71px;	
+	display:inline-block;
+	
+}
+
+
 footer {
+	position:absolute;
+	bottom:0;
 	background-color:white;
 	border-top: 1px solid black;
 	min-height: 45px;
 	width:947px;
-	padding-top: 12px;
 	margin:0 auto;
 }
 
