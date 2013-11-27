@@ -4,6 +4,23 @@ bibloteksapplikation
 Ett system för kund &amp; anställd. Österslätts Papper &amp; Böcker. 
 
 
+Diskussion Torsdag: 
+ÅÄÖ databas prefix ( ställer till det för mig när jag vill göra en automatiskt uppdaterande meny, så vi undviker hårdkoda in kategori värden): De namn som innehåller ÅÄÖ ställs ut som null. Huruvida vi löser detta tar vi på torsdag.
+ 
+Sortera efter bokstav i sök resultat ( behöver lite input hur detta ska lösas).
+
+Fyll på här:
+
+---
+
+---
+
+---
+
+---
+
+
+
 Administrativa sidan ska ha en EGEN css fil och js fil, samt egen bild map, likaså kiosken. Och när era tasks är klara skriv även tidpunkt och dag i readme filen för att jag ska kunna göra burn down charten. 
 
 
