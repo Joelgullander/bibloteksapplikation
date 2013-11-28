@@ -46,13 +46,11 @@ function start(){
 
 // Kategori is called by start when the page has loaded
 function kategori(){
-	var c_id = this.id;
     $.ajax({
 		url:"sql",
 		cache:false,
 		data: {
 			action: "getCategory",
-			c_id: this.id
 		},
 		success:function(data){
 						renderKategori(data);
