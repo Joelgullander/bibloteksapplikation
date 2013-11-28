@@ -6,14 +6,14 @@ function start(){
 
 	// add event handler 
 	
-		$(".menu").click(function (){
-		var isbn = this.id;
+		function kategori(){
+		var c_id = this.id;
         $.ajax({
 			url:"sql",
 			cache:false,
 			data: {
 				action: "getCategory",
-				isbn: this.id
+				c_id: this.id
 			},
 			success:function(data){
 							renderKategori(data);
@@ -25,7 +25,7 @@ function start(){
 
 		});
        
-	});
+	};
 
 	// add event handler keyup to #search
 	$('#search').keyup(function (){
