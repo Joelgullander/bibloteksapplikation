@@ -6,14 +6,14 @@ function start(){
 
 	// add event handler 
 	
-		$(".menu").click(function (){
+		$(".menu").show(function (){
 		var isbn = this.id;
         $.ajax({
 			url:"sql",
 			cache:false,
 			data: {
 				action: "getCategory",
-				isbn: this.id
+				c_id: this.id
 			},
 			success:function(data){
 							renderKategori(data);
