@@ -20,8 +20,7 @@
 	],
 	
 	"getCategory" : [
-		"SELECT * FROM category WHERE c_id =",
-		[["c_id"]]
+		"SELECT * FROM category"
 	],
 
 	"autoComplete" : [
@@ -49,5 +48,5 @@
 	"aproxISBN": [
 		"SELECT * FROM books WHERE isbn LIKE",
 		[["%","fragment", "%"]]
-	],
+	]
 }

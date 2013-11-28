@@ -16,12 +16,10 @@ body{
 }
 
 header {
-	background-image:url('../imgs/admin/header_admin.png');
-	width:100%;
+	background-image:url('../imgs/admin/header_admin2.png');
+	width:1032px;
 	height:246px;
 	position:relative;
-	box-shadow: 0px 10px 20px #888888;
-	border-radius: 20px;
 }
 
 .home {
@@ -35,11 +33,12 @@ ul{
 	font-size: 22px;
 	bottom: 0;
 	padding-left: 50px;
+	z-index: 10;
 }
 ul li {
 	float: left;
 	margin:0 40px 5px 10px;
-	color: #fff;
+	color: #af0953;
 }
 
 ul li:hover{
@@ -49,7 +48,7 @@ ul li:hover{
 
 a{
 	text-decoration: none;
-	color: #fff;
+	color: #af0953;
 }
 
 a:hover{
@@ -58,43 +57,47 @@ a:hover{
 }
 
 .searchbox {
-	width: 400px;
-	height: 45px;
+	height: 40px;
 	position: absolute;
-	bottom: 5px;
-	right: 5px;
+	bottom: -5px;
+	right: 50px;
 	border-radius: 10px;
+	z-index: 10;
 }
 
 header input {
-	width: 390px;
-	height: 35px;
-	border-radius: 10px;
+	width: 410px;
+	height: 30px;
+	border-radius: 5px;
 	font-size: 22px;
 }
 
-.searchbox h2 {
+.searchbox p {
 	position: absolute;
-	bottom: 0px;
-	right: 370px;
+	bottom: 9px;
+	right: 390px;
 	width: 80px;
 	font-size: 22px;
-	color: #FFF;
+	color: #af0953;
+	z-index: 10;
 }
 
 .maincontent {
-	width:100%;
-	min-height:300px;
+	width:937px;
+	position:relative;
+	top:-42px;
+	left:7px;
+	padding:10px;
+	margin:0 auto;
+	min-height:350px;
 	background-color:white;
-	margin-top: -50px;
-	padding-top: 70px;
+}
 }
 /*test*/
 .maincontentadmin {
 	width:100%;
 	min-height:300px;
 	background-color:white;
-	margin-top: -50px;
 	padding-top: 70px;
 }
 /*test*/
@@ -121,19 +124,19 @@ table {
 
 
 footer {
+	position:absolute;
+	bottom:0;
 	background-color:white;
 	border-top: 1px solid black;
 	min-height: 45px;
-	width:100%;
-	padding-top: 12px;
+	width:947px;
 	margin:0 auto;
 }
-
 
 h1 {
 	font-size: 30px;
 	color: #af0953;
-	padding-top: 70px;
+	padding-top: 50px;
 	font-weight: bold;
 	margin-bottom: 10px;
 }

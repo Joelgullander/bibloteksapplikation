@@ -2,30 +2,9 @@ function start(){
 		$('<div class="result"/>').appendTo("#content");
 
 	// add a input field
-	$('<form><input type="text" id="search" value=""/></form>').prependTo("#searchbar");
+	$('<form><input type="text" placeholder="ISBN, Titel, Författare" id="search" value=""/></form>').prependTo("#searchbar");
 
 	// add event handler 
-	
-		function kategori(){
-		var c_id = this.id;
-        $.ajax({
-			url:"sql",
-			cache:false,
-			data: {
-				action: "getCategory",
-				c_id: this.id
-			},
-			success:function(data){
-							renderKategori(data);
-							addEvents();
-			},
-			error:function(errordata){
-				console.log(errordata.responseJSON);
-			}	
-
-		});
-       
-	};
 
 	// add event handler keyup to #search
 	$('#search').keyup(function (){
@@ -60,8 +39,30 @@ function start(){
 
 	}); 
 	
+	kategori();
+	
 
-	};
+};
+
+// Kategori is called by start when the page has loaded
+function kategori(){
+	var c_id = this.id;
+    $.ajax({
+		url:"sql",
+		cache:false,
+		data: {
+			action: "getCategory",
+			c_id: this.id
+		},
+		success:function(data){
+						renderKategori(data);
+						addEvents();
+		},
+		error:function(errordata){
+			console.log(errordata.responseJSON);
+		}	
+	});
+};
 	
 // Render a result for genre as HTML
 
