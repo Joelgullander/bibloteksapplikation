@@ -45,4 +45,7 @@
 		"SELECT * FROM books WHERE isbn LIKE",
 		[["%","fragment", "%"]]
 	]
+	"getCategory" : [
+		"SELECT * FROM category WHERE 1"
+	]
 }
