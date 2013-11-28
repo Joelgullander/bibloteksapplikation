@@ -1,5 +1,7 @@
 <?php
-$dns ="mysql:dbname=bookstore;host=localhost";
+
+
+$dns ="mysql:dbname=bookstore;host=localhost;charset=utf8";
 $myPDO = new PDO($dns , "root", "");
 
 //$myPDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );

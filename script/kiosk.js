@@ -1,16 +1,31 @@
 function start(){
-	$.getJSON(
-		"data/jsonkategory.php",
-		renderKategori
-		); 
-		
 		$('<div class="result"/>').appendTo("#content");
-		$('<div class="result"/>').appendTo(".searchbox, .searchboxadmin");
-
-		$('<div class="resultbok"/>').appendTo('.maincontentadmin, .maincontent');
 
 	// add a input field
 	$('<form><input type="text" id="search" value=""/></form>').prependTo("#searchbar");
+
+	// add event handler 
+	
+		$(".menu").click(function (){
+		var isbn = this.id;
+        $.ajax({
+			url:"sql",
+			cache:false,
+			data: {
+				action: "getCategory",
+				isbn: this.id
+			},
+			success:function(data){
+							renderKategori(data);
+							addEvents();
+			},
+			error:function(errordata){
+				console.log(errordata.responseJSON);
+			}	
+
+		});
+       
+	});
 
 	// add event handler keyup to #search
 	$('#search').keyup(function (){
@@ -56,25 +71,20 @@ function renderKategori(data){
 	for (var i=0; i < data.length;i++)
 	{
 		$("<li>").val(data[i].c_id).text(data[i].name).appendTo(menu);
-		console.log(data[i].c_name);
+		console.log(data[i].c_name);	
 	}
 	addEvents();
 	}; 
 	
 function renderSearch(data){
-	var html = "<table>";
-	html += "<thead><tr>"
-			+ "<th>Title</th>"
-			+ "<th>Author</th>"
-			+ "<th>ISBN</th>"
-			+ "</tr></thead>";						
-	// loop through result array
+	var html = "";
 	for(var i = 0; i < data.length; i++){
 		//console.log(data[i]);
-		html += '<tr id="' + data[i].isbn + '">' 
-				+ "<td>" + data[i].title + "</td>"
-				+ "<td>" + data[i].author + "</td>"
-				+ "<td>" + data[i].isbn + "</td>"
+		html += '<table>'+ '<tr id="' + data[i].isbn + '">' 
+				+ "<td>" + 'ISBN: ' + data[i].isbn + "</td>"
+				+ "<td>" + 'Titel: ' + data[i].title + "</td>"
+				+ "<td>" + 'Författare: ' + data[i].author + "</td>"
+				+ "<td>" + 'Hylla: ' + data[i].shelf + "</td>"
 				+ "</tr>";								
 	}
 	html += "</table>";
@@ -90,6 +100,9 @@ function renderSearch(data){
 	
 	// Klick events
 function addEvents(){
+
+
+
 	$(".menu").on("click","li", function(){
     $("li").removeClass('highlight_stay');
      $(this).addClass('highlight_stay');
