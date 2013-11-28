@@ -2,7 +2,7 @@ function start(){
 		$('<div class="result"/>').appendTo("#content");
 
 	// add a input field
-	$('<form><input type="text" id="search" value=""/></form>').prependTo("#searchbar");
+	$('<form><input type="text" placeholder="ISBN, Titel, Författare" id="search" value=""/></form>').prependTo("#searchbar");
 
 	// add event handler 
 
