@@ -6,8 +6,8 @@ function start(){
 
 	// add event handler 
 	
-		$(".menu").show(function (){
-		var isbn = this.id;
+		function kategori(){
+		var c_id = this.id;
         $.ajax({
 			url:"sql",
 			cache:false,
@@ -25,7 +25,7 @@ function start(){
 
 		});
        
-	});
+	};
 
 	// add event handler keyup to #search
 	$('#search').keyup(function (){
