@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 26, 2013 at 10:12 AM
+-- Generation Time: Nov 28, 2013 at 10:04 AM
 -- Server version: 5.5.32
 -- PHP Version: 5.4.19
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 --
 -- Database: `bookstore`
 --
-CREATE DATABASE IF NOT EXISTS `bookstore` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+CREATE DATABASE IF NOT EXISTS `bookstore` DEFAULT CHARACTER SET utf8 COLLATE utf8_swedish_ci;
 USE `bookstore`;
 
 -- --------------------------------------------------------
@@ -38,6 +38,7 @@ CREATE TABLE IF NOT EXISTS `books` (
   `price` int(11) NOT NULL,
   `stock` int(11) DEFAULT NULL,
   `book_delivery` datetime NOT NULL,
+  `synopsis` text NOT NULL,
   PRIMARY KEY (`isbn`),
   KEY `category` (`c_id`),
   KEY `c_id` (`c_id`)
@@ -47,11 +48,11 @@ CREATE TABLE IF NOT EXISTS `books` (
 -- Dumping data for table `books`
 --
 
-INSERT INTO `books` (`isbn`, `c_id`, `fprice`, `title`, `author`, `shelf`, `price`, `stock`) VALUES
-('9780099470434', 2, 30, 'The curious incident of the dog in the night-time', 'Mark Haddon', '10a', 78, 40),
-('9789144068688', 3, 100, 'Forskningsmetodikens grunder : att planera, genomföra och rapportera en undersökning', 'Rauna Patel, Bo Davidsson', '3', 238, 10),
-('9789163876394', 4, 50, 'Bygg med Legoboken : roliga idéer att bygga vidare på', 'Daniel Lipkowitz', 'b9', 156, 5),
-('9789174293180', 1, 20, 'Fasanjägarna', 'Jussi Adler-Olsen', '20b', 51, 20);
+INSERT INTO `books` (`isbn`, `c_id`, `fprice`, `title`, `author`, `shelf`, `price`, `stock`, `book_delivery`, `synopsis`) VALUES
+('9780099470434', 2, 30, 'The curious incident of the dog in the night-time', 'Mark Haddon', '10a', 78, 40, '0000-00-00 00:00:00', ''),
+('9789144068688', 3, 100, 'Forskningsmetodikens grunder : att planera, genomföra och rapportera en undersökning', 'Runa Patel, Bo Davidson', '3', 238, 10, '0000-00-00 00:00:00', ''),
+('9789163876394', 4, 50, 'Bygg med Legoboken : roliga idéer att bygga vidare på', 'Daniel Lipkowitz', 'b9', 156, 5, '0000-00-00 00:00:00', ''),
+('9789174293180', 1, 20, 'Fasanjägarna', 'Jussi Adler-Olsen', '20b', 51, 20, '0000-00-00 00:00:00', '');
 
 -- --------------------------------------------------------
 
@@ -71,9 +72,9 @@ CREATE TABLE IF NOT EXISTS `category` (
 
 INSERT INTO `category` (`c_id`, `name`) VALUES
 (1, 'Deckare'),
-(2, 'Skönlitteratur'),
+(2, 'Skonlitteratur'),
 (3, 'Student'),
-(4, 'Barnböcker');
+(4, 'Barnbocker');
 
 -- --------------------------------------------------------
 
