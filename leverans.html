@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
 		<title>XXX</title>
 	
@@ -26,18 +25,13 @@
 					</ul>
 
 					<div class="searchbox">
-						<h2><a href="sok.html">Sök</a></h2>
-						<!--<form>
-						<input type="text" name="search">
-					</form>-->
+						<p>Sök</p>
 					</div>
 			</header>
 
-					<div class="maincontent">
-						<div class="leveransbox">
-							<h1>Leverans (ny bok)</h1>	
-
-
+			<div class="maincontent">
+					<div class="leveransbox">
+						<h1>Leverans (ny bok)</h1>	
 
 							<form method ="post" action="script/laggNyBok.php">
 								<div class="info">ISBN:<input type="text" name="isbn"></div>
@@ -62,12 +56,12 @@
 
 							</form>
 
-						</div>
+					</div>
 
-						<div class="alternativbox">
-								<h1>Uppdatera lager</h1>
+					<div class="alternativbox">
+						<h1>Uppdatera lager</h1>
 
-							<form method ="post" action="script/andrabok.php">	
+								<form method ="post" action="script/andrabok.php">	
 								<div class="info"><p>ISBN:<input type="text" name="isbn"></div>
 								<div class="info"><p>Antal:<input type="text" name="antal"></div>
 								<div class="info"><p>Hylla:<input type="text" name="hylla"></div>
@@ -75,12 +69,11 @@
 								<div class="info">Datum:<input type="text" name="mydate" id="date"></div>
 								<div class="info"><input type="submit" value="Ändra bok"></div>
 
-							</form>
-						</div>
-					<footer></footer>			
+								</form>
 					</div>
-					
-			</div>						
-				
+						<footer>
+						</footer>			
+			</div>			
+		</div>										
 	</body>
 </html>
