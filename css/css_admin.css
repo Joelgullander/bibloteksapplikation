@@ -65,15 +65,6 @@ a:hover{
 	right: 5px;
 	border-radius: 10px;
 }
-/*test*/
-.searchboxadmin {
-	width: 400px;
-	height: 45px;
-	position: absolute;
-	bottom: 5px;
-	right: 5px;
-	border-radius: 10px;
-}
 
 header input {
 	width: 390px;
@@ -90,15 +81,7 @@ header input {
 	font-size: 22px;
 	color: #FFF;
 }
-/*test*/
-.searchboxadmin h2 {
-	position: absolute;
-	bottom: 0px;
-	right: 370px;
-	width: 80px;
-	font-size: 22px;
-	color: #FFF;
-}
+
 .maincontent {
 	width:100%;
 	min-height:300px;

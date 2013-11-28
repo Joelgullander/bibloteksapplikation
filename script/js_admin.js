@@ -3,9 +3,9 @@ function start (){
 	// html css till rapport sidan ***  
 	// add div to hold our result table
 	//$('<div class="result"/>').appendTo(".maincontentadmin");
-		$('<div class="result"/>').appendTo(".searchbox, .searchboxadmin");
+		$('<div class="result"/>').appendTo(".searchbox");
 
-		$('<div class="resultbok"/>').appendTo('.maincontentadmin, .maincontent');
+		$('<div class="resultbok"/>').appendTo('.maincontent');
 
 	// add a input field
 	$('<form><input type="text" id="search" value=""/></form>').prependTo(".searchboxadmin, .searchbox");
@@ -122,7 +122,12 @@ function renderBookdetails (bookObj) {
 	}*/
 
 	var bokResultat = "<div>";
-	bokResultat += "<h3>" + bookObj.title + "</h3>";
+	bokResultat += "<p>" + "Boktitel: " + bookObj.title + "</p>";
+	bokResultat += "<p>" + "Författare : " + bookObj.author + "</p>";
+	bokResultat += "<p>" + "ISBN: " + bookObj.isbn + "</p>";
+	bokResultat += "<p>" + "Antal exemplar: " + bookObj.stock + "</p>";
+	bokResultat += "<p>" + "Pris: " + bookObj.price + ":-" + "</p>";
+	bokResultat += "<p>" + "Hylla: " + bookObj.shelf + "</p>";
 	bokResultat += "</div>";
 
 	$('.resultbok').html(bokResultat);
