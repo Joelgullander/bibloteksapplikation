@@ -312,6 +312,18 @@ h4 {
 	margin-left: 0px;
 }
 
+.resultbok {
+	width: 95%;
+	margin-top: 50px;
+	float: left;
+	min-height: 300px;
+	padding-left: 20px;
+	border: 1px solid #ccc;
+}
+.resultbok p {
+	margin: 10px;
+}
+
 
 /**********MEDIA QUERIES*********/
 

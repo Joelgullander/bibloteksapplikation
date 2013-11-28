@@ -1,6 +1,6 @@
 function start (){ 
 
-	$('<div class="resultbok"/>').appendTo('.maincontent');
+
 
 	
 
@@ -87,6 +87,10 @@ function clickEvents() {
 	console.log($('.result tr').length);
 
 	$(".result tr").click(function (){
+		
+		//$('<div class="resultbok"/>').appendTo('.maincontent');
+		$('.rapportbox, .leveransbox, .kassabox').html('<div class="resultbok"/>');
+
 		var isbn = this.id;
         $.ajax({
 			url:"sql",
@@ -111,7 +115,6 @@ function clickEvents() {
     	// efter man har sökt och klickat på resultate så ska sökrutan vara blank
     	document.getElementById('search').value=''; 
 
-
 	});
 };
 
@@ -134,6 +137,7 @@ function renderBookdetails (bookObj) {
 	bokResultat += "</div>";
 
 	$('.resultbok').html(bokResultat);
+
 
 };
 
