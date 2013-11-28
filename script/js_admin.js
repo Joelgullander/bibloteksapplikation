@@ -1,14 +1,16 @@
 function start (){ 
-	// *** Valentin/ Just nu appendas resultatet och sökboxen till body detta kan vi ändra när vi har en 
-	// html css till rapport sidan ***  
-	// add div to hold our result table
-	//$('<div class="result"/>').appendTo(".maincontentadmin");
-		$('<div class="result"/>').appendTo(".searchbox");
 
-		$('<div class="resultbok"/>').appendTo('.maincontent');
+	$('<div class="resultbok"/>').appendTo('.maincontent');
 
-	// add a input field
-	$('<form><input type="text" id="search" value=""/></form>').prependTo(".searchboxadmin, .searchbox");
+	
+
+
+	// add a input field for the search box
+	$('<form><input type="text" id="search" value=""/></form>').prependTo(".searchbox");
+	// add div to hold our result table from the searchbox
+	$('<div class="result"/>').appendTo(".searchbox");
+
+
 
 	// add event handler keyup to #search
 	$('#search').keyup(function (){
@@ -48,7 +50,7 @@ function start (){
 			      } 
 
 	}); 
-	
+
 		
 };
 
@@ -103,12 +105,13 @@ function clickEvents() {
 			}	
 
 		});
-    		// efter man har sökt och klickat på resultate så ska sökrutan försvinna
-    		$(".result").hide();
-    		// efter man har sökt och klickat på resultate så ska sökrutan vara blank
-    		document.getElementById('search').value=''; 
-		//});
-       
+    	
+    	// efter man har sökt och klickat på resultate så ska sökrutan försvinna
+    	$(".result").hide();
+    	// efter man har sökt och klickat på resultate så ska sökrutan vara blank
+    	document.getElementById('search').value=''; 
+
+
 	});
 };
 
