@@ -44,8 +44,9 @@
 	"aproxISBN": [
 		"SELECT * FROM books WHERE isbn LIKE",
 		[["%","fragment", "%"]]
-	]
+	],
 	"getCategory" : [
-		"SELECT * FROM category WHERE 1"
+		"SELECT * FROM category WHERE 1",
+		[["c_id"]]
 	]
 }
