@@ -17,7 +17,7 @@ $forfattare = $_POST['forfattare'];
 $mydate =$_POST['mydate'];
 $antal =$_POST['antal'];
 $fprice =$_POST['fpris'];
-$sprice =$_POST['spris'];
+$sprice =$_POST['sprice'];
 $forfattare=$_POST['forfattare'];
 $hylla =$_POST['hylla'];
 $category=$_POST['kat'];
@@ -32,9 +32,6 @@ if ($category=="Student")
 if ($category=="Barnbocker")
 	{$category=4;}
 
-
-
-//print_r($category);
 $data = array($isbn, $titel, $forfattare, $mydate, $antal, $fprice, $sprice, $hylla, $category);
 
 $statement->execute($data);
