@@ -92,13 +92,11 @@ header input {
 	min-height:350px;
 	background-color:white;
 }
-}
-/*test*/
-.maincontentadmin {
-	width:100%;
-	min-height:300px;
-	background-color:white;
-	padding-top: 70px;
+.adinbox{
+	width: 60%;
+	float: left;
+	min-height: 300px;
+	padding-left: 20px;
 }
 /*test*/
 td, th {
@@ -318,7 +316,7 @@ h4 {
 	float: left;
 	min-height: 300px;
 	padding-left: 20px;
-	border: 1px solid #ccc;
+	/*border: 1px solid #ccc;*/
 }
 .resultbok p {
 	margin: 10px;

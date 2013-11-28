@@ -89,7 +89,7 @@ function clickEvents() {
 	$(".result tr").click(function (){
 		
 		//$('<div class="resultbok"/>').appendTo('.maincontent');
-		$('.rapportbox, .leveransbox, .kassabox').html('<div class="resultbok"/>');
+		$('.rapportbox, .leveransbox, .kassabox, .adminbox').html('<div class="resultbok"/>');
 
 		var isbn = this.id;
         $.ajax({
