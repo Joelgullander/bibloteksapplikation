@@ -1,29 +1,28 @@
 bibloteksapplikation
 ====================
 
-Ett system för kund &amp; anställd. Österslätts Papper &amp; Böcker. 
+Ett system för kund &amp; anställd. Österslätts Papper &amp; Böcker.
 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Retrospective Meeting - Sprint retrospective (5/12, fyll på frågorna nedan för att vi ska få en vy på hur vi kan förbättra oss i sprint 2. Glöm inte att poängtera vad som gick bra med första sprinten. Inga svar innan sprint 1 är slutfört)
 
-Diskussion Torsdag: 
-ÅÄÖ databas prefix ( ställer till det för mig när jag vill göra en automatiskt uppdaterande meny, så vi undviker hårdkoda in kategori värden): De namn som innehåller ÅÄÖ ställs ut som null. Huruvida vi löser detta tar vi på torsdag.
- 
-Sortera efter bokstav i sök resultat ( behöver lite input hur detta ska lösas).
+Vad gick bra?(Fyll på)
+-
+-
+-
+-
+-
+-
 
-Fyll på här:
+Vad kan göras bättre?(Fyll på)
+-
+-
+-
+-
+-
+-
 
----
-
----
-
----
-
----
-
-
-
-Administrativa sidan ska ha en EGEN css fil och js fil, samt egen bild map, likaså kiosken. Och när era tasks är klara skriv även tidpunkt och dag i readme filen för att jag ska kunna göra burn down charten. 
-
-
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 
  X = Klar, - = Ledig
@@ -41,9 +40,9 @@ Prisändring [-Vira tar denna, inte klar]
 
 Kiosk:
 
-Sökfunktion hitta bok [Joel tar denna, inte klar]
+Sökfunktion hitta bok []
 Specifik info om bok [Joel tar denna, inte klar]
-Koda template JQUERY HTML CSS [Joel tar denna, inte klar]
+Koda template JQUERY HTML CSS [Joel klar 18:00 28/11/2013]
 
 Administrativ:
 Hela databasen [-]
