@@ -6,7 +6,7 @@ function start (){
 
 
 	// add a input field for the search box
-	$('<form><input type="text" id="search" value=""/></form>').prependTo(".searchbox");
+	$('<form><input type="text" id="search" placeholder="ISBN, Titel, Författare" value=""/></form>').prependTo(".searchbox");
 	// add div to hold our result table from the searchbox
 	$('<div class="result"/>').appendTo(".searchbox");
 
