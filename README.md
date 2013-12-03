@@ -32,7 +32,7 @@ Lager:
 
 20p Lägg till ny bok PHP [Vira tar denna, inte klar]
 5p Lägg till bok som redan är i lager [Vira tar denna, inte klar]
-3p design lagersida bok
+3p design lagersida bok (klar 14:47 4-12-2013)
 2p lägg till ny bok css
 
 
