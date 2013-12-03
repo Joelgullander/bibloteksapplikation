@@ -26,28 +26,34 @@ Vad kan göras bättre?(Fyll på)
 
 
  X = Klar, - = Ledig
-Rapport:
-
-Sökfunktion Titel (RAPPORT) DB-PHP-JSON [valentin tar denna, [X] klar 09:55 28-11-2013]
-Design/Resultat Admin Sök funktion CSS + HTML [Valentin tar denna, inte klar]
 
 
 Lager:
 
-Lägg till ny bok PHP [Vira tar denna, inte klar]
-Lägg till bok som redan är i lager [Vira tar denna, inte klar]
-Prisändring [-Vira tar denna, inte klar]
+20p Lägg till ny bok PHP [Vira tar denna, inte klar]
+5p Lägg till bok som redan är i lager [Vira tar denna, inte klar]
+3p design lagersida bok
+2p lägg till ny bok css
+
 
 Kiosk:
 
-Sökfunktion hitta bok []
-Specifik info om bok [Joel tar denna, inte klar]
-Koda template JQUERY HTML CSS [Joel klar 18:00 28/11/2013]
+3p Sökfunktion hitta bok []
+1p Specifik info om bok [Joel tar denna, inte klar]
+20p Koda template JQUERY HTML CSS [Joel klar 18:00 28/11/2013]
+3p sökfunktion hitta bok [joel klar 30/11/13]
+5p kategorisök [joel]
 
 Administrativ:
-Hela databasen [-]
-Sökfunktion [valentin tar denna, (tror denna är)  [X] klar 15:01 22-11-2013]
-Hela databasen [X] klar 10:22 2013-11-26]
-Sökfunktion [valentin tar denna, inte klar]
 
-Design administrativa [klar 09.56 28-11-2013]
+13p Sökfunktion [valentin tar denna, (tror denna är)  [X] klar 15:01 22-11-2013]
+5p Hela databasen [X] klar 10:22 2013-11-26]
+13p Sökfunktion [valentin tar denna, [X] klar 09:55 28-11-2013]
+
+20p Design administrativa [klar 09.56 28-11-2013]
+
+= 113 p första sprinten
+
+done = 74p
+testing = 9p
+in progress = 30p
