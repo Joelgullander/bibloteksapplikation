@@ -128,12 +128,13 @@ function renderBookdetails (bookObj) {
 	}*/
 
 	var bokResultat = "<div>";
-	bokResultat += "<p>" + "Boktitel: " + bookObj.title + "</p>";
-	bokResultat += "<p>" + "Författare : " + bookObj.author + "</p>";
-	bokResultat += "<p>" + "ISBN: " + bookObj.isbn + "</p>";
-	bokResultat += "<p>" + "Antal exemplar: " + bookObj.stock + "</p>";
-	bokResultat += "<p>" + "Pris: " + bookObj.price + ":-" + "</p>";
-	bokResultat += "<p>" + "Hylla: " + bookObj.shelf + "</p>";
+	bokResultat += "<h1>" + "Bokinfo:" + "</h1>"; 
+	bokResultat += "<h4>" + "Titel: " + "</h4>" + "<p>" + bookObj.title + "</p>" + "<br>";
+	bokResultat += "<h4>" + "Författare : " + "</h4>" + "<p>" + bookObj.author + "</p>" + "<br>";
+	bokResultat += "<h4>" + "ISBN: " + "</h4>" + "<p>" + bookObj.isbn + "</p>" + "<br>";
+	bokResultat += "<h4>" + "Antal exemplar: " + "</h4>" + "<p>" + bookObj.stock + "</p>" + "<br>";
+	bokResultat += "<h4>" + "Pris: " +  "</h4>" + "<p>" + bookObj.price + ":-" + "</p>" + "<br>";
+	bokResultat += "<h4>" + "Hylla: " + "</h4>" + "<p>" + bookObj.shelf + "</p>" + "<br>";
 	bokResultat += "</div>";
 
 	$('.resultbok').html(bokResultat);
