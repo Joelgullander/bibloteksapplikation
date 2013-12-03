@@ -100,24 +100,30 @@ function renderSearch(data){
 	// Klick events
 function addEvents(){
 
-
-
 	$(".menu").on("click","li", function(){
-    $("li").removeClass('highlight_stay');
-     $(this).addClass('highlight_stay');
-     if ($(this).val() == "1"){
-	     console.log("Lista med böcker från c_id = 1");
-     }
-     if ($(this).val() == "2"){
-	     console.log("Lista med böcker från c_id = 2");
-     }
-     if ($(this).val() == "3"){
-	     console.log("Lista med böcker från c_id = 3");
-     }
-     if ($(this).val() == "4"){
-	     console.log("Lista med böcker från c_id = 4");
-     }
-		})
+    	$("li").removeClass('highlight_stay');
+		$(this).addClass('highlight_stay');
+
+		$.ajax({
+					url:"sql",
+					cache:false,
+					data: {
+						action: "getentriesCat",
+						c_id: $(this).val()
+		
+					},
+					success:function(data){
+						renderSearch(data);
+					},
+					error:function(errordata){
+						console.log(errordata.responseJSON);
+					}
+		
+					
+				});
+		
+		
+		   	});
 		};
 		
 

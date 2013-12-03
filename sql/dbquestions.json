@@ -20,6 +20,10 @@
 "getCategory" : [
 "SELECT * FROM category"
 ],
+"getentriesCat" : [
+	"SELECT * FROM books WHERE c_id =",
+	["c_id"]
+],
 
 "autoComplete" : [
 "SELECT * FROM books WHERE isbn LIKE",
