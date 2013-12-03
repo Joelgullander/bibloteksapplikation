@@ -14,9 +14,9 @@
 		[["author"]]
 	],
 
-	"getCat" : [
-		"SELECT * FROM category WHERE c_id =",
-		[["c_id"]]
+	"getBookByISBN" : [
+		"SELECT * FROM books WHERE name=''"
+		[["name"]]
 	],
 
 	"getCategory" : [
@@ -24,13 +24,13 @@
 		[["name"]]
 	],
 
-	"getBookByISBN" : [
-		"SELECT * FROM booktitles WHERE isbn =",
-		[["isbn"]]
-	],
+	"getCat" : [
+			"SELECT * FROM category WHERE c_id =",
+			[["c_id"]]
+		],
 
 	"autoComplete" : [
-		"SELECT * FROM booktitles WHERE isbn LIKE",
+		"SELECT * FROM books WHERE isbn LIKE",
 		[["%","fragment","%"]],
 		"OR author LIKE",
 		[["%","fragment","%"]],
@@ -43,64 +43,16 @@
 		[["%","fragment","%"]]
 	],
 
-	"uppdateStock" : [
-		"UPDATE books SET stock =",
-		[["stock"]],
-		"WHERE isbn=",
-		[["isbn"]],
-		";SELECT * FROM books WHERE isbn=",
-		[["isbn"]]
-	],
-
-	"uppdateShelf" : [
-		"UPDATE books SET shelf =",
-		[["shelf"]],
-		"WHERE isbn=",
-		[["isbn"]],
-		";SELECT * FROM books WHERE isbn=",
-		[["isbn"]]
-	],
-
-	"uppdateButicPrice" : [
-		"UPDATE books SET price =",
-		[["price"]],
-		"WHERE isbn=",
-		[["isbn"]],
-		";SELECT * FROM books WHERE isbn=",
-		[["isbn"]]
-	],
-
-	"uppdateDate" : [
-		"UPDATE books SET book_delivery =",
-		[["book_delivery"]],
-		"WHERE isbn=",
-		[["isbn"]],
-		";SELECT * FROM books WHERE isbn=",
-		[["isbn"]]
-	],
-	
-	"insertNyIsbn" : [
-		"INSERT INTO books SET isbn=",
-		[["isbn"]]
-	],
-
-	"insertNyTitel" : [
-		"INSERT INTO books SET title=",
-		[["title"]]
-	],
-
 	"updateBookTitle" : [
-		"UPDATE booktitles SET title =",
+		"UPDATE books SET title =",
 		[["title"]],
 		"WHERE isbn=",
 		[["isbn"]],
-		";SELECT * FROM booktitles WHERE isbn=",
+		";SELECT * FROM books WHERE isbn=",
 		[["isbn"]]
 	],
-
 	"aproxISBN": [
 		"SELECT * FROM books WHERE isbn LIKE",
 		[["%","fragment", "%"]]
 	]
-
 }
