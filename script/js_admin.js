@@ -128,6 +128,7 @@ function renderBookdetails (bookObj) {
 	}*/
 
 	var bokResultat = "<div>";
+	bokResultat += "<h4>" + "Boktitel: " + "</h4>"
 	bokResultat += "<p>" + "Boktitel: " + bookObj.title + "</p>";
 	bokResultat += "<p>" + "Författare : " + bookObj.author + "</p>";
 	bokResultat += "<p>" + "ISBN: " + bookObj.isbn + "</p>";
