@@ -53,7 +53,7 @@ INSERT INTO `books` (`isbn`, `c_id`, `fprice`, `title`, `author`, `shelf`, `pric
 ('9789144068688', 3, 100, 'Forskningsmetodikens grunder : att planera, genomföra och rapportera en undersökning', 'Runa Patel, Bo Davidson', '3', 238, 10, '0000-00-00 00:00:00', ''),
 ('9789163876394', 4, 50, 'Bygg med Legoboken : roliga idéer att bygga vidare på', 'Daniel Lipkowitz', 'b9', 156, 5, '0000-00-00 00:00:00', ''),
 ('9789174293180', 1, 20, 'Fasanjägarna', 'Jussi Adler-Olsen', '20b', 51, 20, '0000-00-00 00:00:00', '')
-('9780816679638',2,98,'Humanesis','David Cecchetto',),
+('9780816679638',2,98,'Humanesis','David Cecchetto','', 100, 20, '0000-00-00 00:00:00', ''),
 ('9780262519571',3,75,'The Power of Narrative in Environmental Networks','Raul Lejano','',120,20,'0000-00-00 00:00:00',''),
 ('9781597097161',4,52,'The Palace of Contemplating Departure','Brynn Saito','',70,10,'0000-00-00 00:00:00',''),
 ('9780299293406',1,49,'Scattered','Diana Howansky Reilly','',60,30,'0000-00-00 00:00:00',''),
