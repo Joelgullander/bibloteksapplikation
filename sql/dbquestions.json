@@ -47,8 +47,50 @@
 ";SELECT * FROM books WHERE isbn=",
 [["isbn"]]
 ],
+
 "aproxISBN": [
 "SELECT * FROM books WHERE isbn LIKE",
 [["%","fragment", "%"]]
+],
+
+"getCat" : [
+"SELECT * FROM category WHERE c_id =",
+[["c_id"]]
+],
+
+"uppdateStock" : [
+"UPDATE books SET stock =",
+[["stock"]],
+"WHERE isbn=",
+[["isbn"]],
+";SELECT * FROM books WHERE isbn=",
+[["isbn"]]
+],
+
+"uppdateShelf" : [
+"UPDATE books SET shelf =",
+[["shelf"]],
+"WHERE isbn=",
+[["isbn"]],
+";SELECT * FROM books WHERE isbn=",
+[["isbn"]]
+],
+
+"uppdateButicPrice" : [
+"UPDATE books SET price =",
+[["price"]],
+"WHERE isbn=",
+[["isbn"]],
+";SELECT * FROM books WHERE isbn=",
+[["isbn"]]
+],
+
+"uppdateDate" : [
+"UPDATE books SET book_delivery =",
+[["book_delivery"]],
+"WHERE isbn=",
+[["isbn"]],
+";SELECT * FROM books WHERE isbn=",
+[["isbn"]]
 ]
 }
