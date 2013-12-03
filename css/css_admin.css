@@ -75,11 +75,17 @@ header input {
 .searchbox p {
 	position: absolute;
 	bottom: 9px;
-	right: 390px;
+	right: 400px;
 	width: 80px;
 	font-size: 22px;
 	color: #af0953;
 	z-index: 10;
+}
+
+#search{
+	width: 427px;
+
+	right: 0;
 }
 
 .maincontent {
