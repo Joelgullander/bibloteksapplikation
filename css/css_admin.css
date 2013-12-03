@@ -120,6 +120,10 @@ table {
 	z-index: 2;
 }
 
+table tr {
+	cursor: pointer;
+}
+
 
 footer {
 	position:absolute;
@@ -319,9 +323,12 @@ h4 {
 	padding-left: 20px;
 	/*border: 1px solid #ccc;*/
 }
+
+
 .resultbok p {
 	margin: 10px;
 }
+.result{}
 
 
 /**********MEDIA QUERIES*********/
