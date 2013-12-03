@@ -54,6 +54,6 @@ Administrativ:
 
 = 113 p första sprinten
 
-done = 74p
-testing = 9p
+done = 77p
+testing = 6p
 in progress = 30p
