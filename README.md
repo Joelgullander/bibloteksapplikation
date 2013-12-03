@@ -46,9 +46,9 @@ Kiosk:
 
 Administrativ:
 
-13p Sökfunktion [valentin tar denna, (tror denna är)  [X] klar 15:01 22-11-2013]
+13p Sökfunktion [valentin [X] klar 15:01 22-11-2013]
 5p Hela databasen [X] klar 10:22 2013-11-26]
-13p Sökfunktion [valentin tar denna, [X] klar 09:55 28-11-2013]
+13p Sökfunktion [valentin [X] klar 09:55 28-11-2013]
 
 20p Design administrativa [klar 09.56 28-11-2013]
 
