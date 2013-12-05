@@ -74,7 +74,7 @@ function uppdate(){
                         },
                         success:function(data){
                             
-                           alert("success uppdateStock");
+                           
                         },
                         error:function(errorData){
                             //console.log(x.responseJSON);
@@ -92,7 +92,7 @@ function uppdate(){
                             isbn: getIsbn
                         },
                         success:function(data){
-                           alert("success uppdateShelf");
+                          
                            
                         },
                         error:function(errorData){
@@ -111,11 +111,11 @@ function uppdate(){
                             isbn: getIsbn
                         },
                         success:function(data){
-                           alert("success uppdateButicPrice");
+                           
                            
                         },
                         error:function(errorData){
-                            //console.log(x.responseJSON);
+
                             alert("It is error:"+errorData.responseJSON.error);
                     }
             });
@@ -131,23 +131,19 @@ function uppdate(){
                             isbn: getIsbn
                         },
                         success:function(data){
-                           alert("success uppdateDate");
+                          
                            
                         },
                         error:function(errorData){
-                            //console.log(x.responseJSON);
+
                             alert("It is error:"+errorData.responseJSON.error);
                     }
             });
-                        console.log("getStock ",getStock);
-                        console.log("getShelf ",getShelf);
-                        console.log("getPrice ",getPrice);    
-                        console.log("getDate ",getDate);
-                        console.log("getIsbn ",getIsbn);
-               
+
+             alert("Success update");  
     });
 
-       
+        
 };
 /*
 function addnybok(){
