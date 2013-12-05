@@ -43,8 +43,6 @@ function displayData(data){
 function uppdate(){
  // Add event handler klick to btn #andrebok
 
-    console.log( $(".andraForm").length);
-    console.log($('body').children().length)
     $(".andraForm").submit(function(e){
 
         // do not reload the page
@@ -52,9 +50,6 @@ function uppdate(){
     
         var getIsbn=$("#myisbn").val();
         var getStock=$("#mystock").val();
-        var getShelf=$("#myshelf").val();
-        var getPrice=$("#myprice").val();
-        var getDate=$("#mydate").val();  
 
                     $.ajax(
                     {     
@@ -66,14 +61,19 @@ function uppdate(){
                             isbn: getIsbn
                         },
                         success:function(data){
-                            
-                           alert("success uppdateStock");
+                            updateShelf();
                         },
                         error:function(errorData){
                             //console.log(x.responseJSON);
                             alert("It is error:"+errorData.responseJSON.error);
                     }
             });
+        });     
+};
+
+function updateShelf(){
+        var getIsbn=$("#myisbn").val();
+        var getShelf=$("#myshelf").val(); 
 
                       $.ajax(
                     {     
@@ -85,14 +85,18 @@ function uppdate(){
                             isbn: getIsbn
                         },
                         success:function(data){
-                           alert("success uppdateShelf");
-                           
+                          updatePrice(); 
                         },
                         error:function(errorData){
                             //console.log(x.responseJSON);
                             alert("It is error:"+errorData.responseJSON.error);
                     }
             });
+}
+
+function updatePrice(){
+        var getIsbn=$("#myisbn").val();
+        var getPrice=$("#myprice").val();
 
                         $.ajax(
                     {     
@@ -104,8 +108,7 @@ function uppdate(){
                             isbn: getIsbn
                         },
                         success:function(data){
-                           alert("success uppdateButicPrice");
-                           
+                           updateData();
                         },
                         error:function(errorData){
                             //console.log(x.responseJSON);
@@ -113,7 +116,11 @@ function uppdate(){
                     }
             });
 
-               
+}
+
+function updateData(){
+        var getIsbn=$("#myisbn").val();
+        var getDate=$("#mydate").val();
                         $.ajax(
                     {     
                         url:"sql",
@@ -124,19 +131,15 @@ function uppdate(){
                             isbn: getIsbn
                         },
                         success:function(data){
-                           alert("success uppdateDate");
-                           
+                           alert("Success update");    
                         },
                         error:function(errorData){
                             //console.log(x.responseJSON);
                             alert("It is error:"+errorData.responseJSON.error);
                     }
             });
-                        console.log("getStock ",getStock);             
-    });
+ }                                  
 
-       
-};
 //*****************************
 //Insert new book
 //*****************************
@@ -157,7 +160,7 @@ function addnyline(){
                                     c_id: getCat
                                 },
                                 success:function(data){
-                                   displayData(data);
+                                   addnyCat();
                                 },
                                 error:function(errorData){
                                     //console.log(x.responseJSON);
@@ -166,7 +169,12 @@ function addnyline(){
 
                             });
 
-                        $.ajax(
+        });     
+};
+
+function addnyCat(){
+    var getCat=$("#category").val();
+                $.ajax(
                         {     
                             url:"sql",
                             cache:false,
@@ -181,8 +189,8 @@ function addnyline(){
                                 alert("It is error:"+errorData.responseJSON);
                         }
                 }); 
-        });     
-};
+
+}
 
 function addnyIsbn(){
 
