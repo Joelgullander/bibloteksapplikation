@@ -93,5 +93,83 @@
 [["isbn"]],
 ";SELECT * FROM books WHERE isbn=",
 [["isbn"]]
+],
+
+
+"insertCat" : [
+		"INSERT INTO books SET c_id=",
+		[["c_id"]]
+	],
+
+"uppdateNyBokIsbn" : [
+"UPDATE books SET isbn =",
+[["isbn"]],
+"WHERE fprice=",
+[["fprice"]],
+";SELECT * FROM books WHERE fprice=",
+[["fprice"]]
+],
+
+"uppdateNyBokFprice" : [
+"UPDATE books SET fprice =",
+[["fprice"]],
+"WHERE isbn=",
+[["isbn"]],
+";SELECT * FROM books WHERE isbn=",
+[["isbn"]]
+],
+
+"uppdateNyBokTitel" : [
+"UPDATE books SET title =",
+[["title"]],
+"WHERE isbn=",
+[["isbn"]],
+";SELECT * FROM books WHERE isbn=",
+[["isbn"]]
+],
+
+"uppdateNyBokAuthor" : [
+"UPDATE books SET author =",
+[["author"]],
+"WHERE isbn=",
+[["isbn"]],
+";SELECT * FROM books WHERE isbn=",
+[["isbn"]]
+],
+
+"uppdateNyBokShelf" : [
+"UPDATE books SET shelf =",
+[["shelf"]],
+"WHERE isbn=",
+[["isbn"]],
+";SELECT * FROM books WHERE isbn=",
+[["isbn"]]
+],
+
+"uppdateNyBokPrice" : [
+"UPDATE books SET price =",
+[["price"]],
+"WHERE isbn=",
+[["isbn"]],
+";SELECT * FROM books WHERE isbn=",
+[["isbn"]]
+],
+
+"uppdateNyBokStock" : [
+"UPDATE books SET stock =",
+[["stock"]],
+"WHERE isbn=",
+[["isbn"]],
+";SELECT * FROM books WHERE isbn=",
+[["isbn"]]
+],
+
+"uppdateNyBokDelivery" : [
+"UPDATE books SET book_delivery =",
+[["book_delivery"]],
+"WHERE isbn=",
+[["isbn"]],
+";SELECT * FROM books WHERE isbn=",
+[["isbn"]]
 ]
 }
