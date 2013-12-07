@@ -195,6 +195,7 @@ function addnyCat(){
 function addnyIsbn(){
 
             var getIsbn=$("#nybokisbn").val();
+            var emptytitle="";
 
              $.ajax(
                         {     
@@ -203,7 +204,7 @@ function addnyIsbn(){
                             data: {
                                 action: "uppdateNyBokIsbn",
                                 isbn: getIsbn,
-                                fprice: 0
+                                title: emptytitle
                             },
                             success:function(data){
                                addnyFprice(); 
@@ -354,14 +355,16 @@ function addnyIsbn(){
      function addnyDelivery(){
 
             var getIsbn=$("#nybokisbn").val();
-            var getDate=$("#date").val();  
+            var getDate=$("#date").val();
+            var getDate1=getDate[6]+getDate[7]+getDate[8]+getDate[9]+   getDate[0]+ getDate[1]+   getDate[3]+getDate[4];
+
              $.ajax(
                         {     
                             url:"sql",
                             cache:false,
                             data: {
                                 action: "uppdateNyBokDelivery",
-                                book_delivery: getDate,
+                                book_delivery: getDate1,
                                 isbn: getIsbn
                             },
                             success:function(data){

@@ -104,10 +104,10 @@
 "uppdateNyBokIsbn" : [
 "UPDATE books SET isbn =",
 [["isbn"]],
-"WHERE fprice=",
-[["fprice"]],
-";SELECT * FROM books WHERE fprice=",
-[["fprice"]]
+"WHERE title=",
+[["title"]],
+";SELECT * FROM books WHERE title=",
+[["title"]]
 ],
 
 "uppdateNyBokFprice" : [
